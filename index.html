@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="stylesheet" href="static/main.css">
+    <link rel="stylesheet" href="static/bootstrap.min.css">
+    <link rel="stylesheet" href="static/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="static/favicon.png" type="image/x-icon">
+    <title>Nice player</title>
+  </head>
+  <body>
+    <div id="player">
+      <div class="js-video-container"></div>
+      <div class="controls">
+        <button class="js-play-button">
+          <i class="fa fa-play" aria-hidden="true"></i>
+        </button>
+        <button class="js-pause-button">
+          <i class="fa fa-pause" aria-hidden="true"></i>
+        </button>
+        <button class="js-mute-button">
+          <i class="fa fa-volume-off" aria-hidden="true"></i>
+        </button>
+        <button class="js-volume-button">
+          <i class="fa fa-volume-up" aria-hidden="true"></i>
+        </button>
+        <div class="empty-space"></div>
+        <button class="js-fullscreen-button">
+          <i class="fa fa-expand" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+
+    <script src="static/jquery-3.4.1.min.js"></script>
+    <script src="static/playable.bundle.min.js"></script>
+    <script src="static/player.js"></script>
+    
+    <script type="text/javascript">
+      createPlayer({elementId: 'player'});
+    </script>
+    
+  </body>
+</html>
