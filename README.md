@@ -4,7 +4,7 @@
 
 ![Screenshot](screenshot.jpg)
 
-[Плеер](https://githubpages).
+[Плеер](https://danceandfight.github.io/video-player/).
 
 ## Как установить
 
@@ -12,7 +12,7 @@
 2. Установите зависимости командой: `python -m requirements.txt`
 3. Используйте команду: `livereload .` 
 В терминале появится сообщение указывающее адрес сайта, например 
-`[I 200916 16:13:55 server:335] Serving on http://127.0.0.1:35729`. Теперь при внесении любых изменений в index.html сайт будет автоматически обновляться.
+`[I 200916 16:13:55 server:335] Serving on http://127.0.0.1:35729`. Теперь при внесении любых изменений в `index.html` сайт будет автоматически обновляться.
 
 Подробнее о [видеоплеере](https://github.com/devmanorg/video-player-jslib)
 
