@@ -1,4 +1,4 @@
-#player {
+.player-container {
   width:  800px; 
   height: 600px;
   box-shadow: 0 0 20px rgba(0,0,0,0.8);
@@ -15,7 +15,7 @@
   background-color: black;
 }
 
-.player__button {
+.player-control-button {
   background-color: black;
   border-style: none;
 }
