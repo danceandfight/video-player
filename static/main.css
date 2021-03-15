@@ -18,6 +18,7 @@
 .player-control-button {
   background-color: black;
   border-style: none;
+  cursor: pointer; 
 }
 
 .player-control-menu-icon {
