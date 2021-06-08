@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+    <link href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="static/main.css">
     <link rel="stylesheet" href="static/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="static/favicon.png" type="image/x-icon">
@@ -13,22 +14,33 @@
     <div id="player" class="player-container">
       <div class="js-video-container video-container"></div>
       <div class="player-controls">
-        <button class="player-control-button js-play-button">
-          <i class="player-control-menu-icon fa fa-play" aria-hidden="true"></i>
-        </button>
-        <button class="player-control-button js-pause-button" hidden>
-          <i class="player-control-menu-icon fa fa-pause" aria-hidden="true"></i>
-        </button>
-        <button class="player-control-button js-volume-button">
-          <i class="player-control-menu-icon fa fa-volume-off" aria-hidden="true"></i>
-        </button>
-        <button class="player-control-button js-mute-button" hidden>
-          <i class="player-control-menu-icon fa fa-volume-up" aria-hidden="true"></i>
-        </button>
-        <div class="player-controls-empty-space"></div>
-        <button class="player-control-button js-fullscreen-button">
-          <i class="player-control-menu-icon fa fa-expand" aria-hidden="true"></i>
-        </button>
+        <div class="controls left-buttons">
+          <button class="player-button js-play-button">
+            <i class="player-menu-icon fa fa-play fa-lg" aria-hidden="true"></i>
+          </button>
+          <button class="player-button js-pause-button" hidden>
+            <i class="player-menu-icon fa fa-pause fa-lg" aria-hidden="true"></i>
+          </button>
+          <button class="player-button js-volume-button">
+            <i class="player-menu-icon fa fa-volume-off fa-lg" aria-hidden="true"></i>
+          </button>
+          <button class="player-button js-mute-button" hidden>
+            <i class="player-menu-icon fa fa-volume-up fa-lg" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="controls viewing-panel">
+          <div class="player-control-time" style="color: white;">
+            <div class="js-current-time"></div>
+            <div class="viewing-progressbar">—</div>
+            <div class="empty-space"></div>
+            <div class="js-duration"></div>
+          </div>
+        </div>
+        <div class="controls right-buttons">
+          <button class="player-button js-fullscreen-button">
+            <i class="player-menu-icon fa fa-expand fa-lg" aria-hidden="true"></i>
+          </button>
+        </div>
       </div>
     </div>
 
