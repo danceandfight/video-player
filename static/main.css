@@ -25,12 +25,14 @@
 }
 
 .left-buttons {
+  display: flex;
   max-width: 70px;
-  margin-left: 4px;
 }
 
 .right-buttons {
+  margin-top: 0px;
   max-width: 32px;
+  /*margin-right: 3px;*/
 }
 
 .player-button {
@@ -38,24 +40,38 @@
   border: 1px solid red;
   border-style: none;
   cursor: pointer;
-  margin-top: 10px;
+  margin-top: 11px;
 }
 
-.player-button:last-child {
+.play-pause {
+  margin-left: 4px;
+  width: 30px;
+}
+
+.mute-unmute {
+  margin-left: 6px;
+  width: 30px;
+}
+
+/*
+.player-button:first-child,
+.player-button:nth-child(2) {
+   margin-left: 4px;
+}
+*/
+
+/*
+.player-button:nth-child(3) {
   margin-right: 2px;
 }
 
-.player-button:nth-child(3) {
-  margin-left: 6px;
-}
-
 .player-button:nth-child(4) {
-  margin-left: 6px;
+  margin-right: 2px;
 }
-
+*/
 .player-control-time {
   font-family: 'Roboto', sans-serif;
-  margin: 10px 5px 0px 0px;
+  margin: 10px 5px 0px 5px;
   display: flex;
 }
 
@@ -69,7 +85,36 @@
   vertical-align: middle;
 }
 
-.empty-space {
+.viewing-progressbar {
+  margin-top:  1px;
   flex-grow: 1;
+  height: 5px;
+  align-self: center;
 }
 
+.js-progress {
+  background-color: black;
+  height: auto;
+  margin-left: 10px;
+  border-radius: 2px;
+  display: flex;
+}
+
+.js-progress-slider {
+  background-color: red;
+  width: 31.4402%;
+  height: 5px;
+  border-radius: 2px;
+ 
+}
+
+.progress-pointer {
+  height: 8px;
+  width: 8px;
+  background-color: red;
+  border: 3px solid white;
+  border-radius: 50%;
+  display: flex;
+  margin-top: -5px;
+  margin-left: -5px;
+}

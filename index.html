@@ -15,27 +15,36 @@
       <div class="js-video-container video-container"></div>
       <div class="player-controls">
         <div class="controls left-buttons">
-          <button class="player-button js-play-button">
-            <i class="player-menu-icon fa fa-play fa-lg" aria-hidden="true"></i>
-          </button>
-          <button class="player-button js-pause-button" hidden>
-            <i class="player-menu-icon fa fa-pause fa-lg" aria-hidden="true"></i>
-          </button>
-          <button class="player-button js-volume-button">
-            <i class="player-menu-icon fa fa-volume-off fa-lg" aria-hidden="true"></i>
-          </button>
-          <button class="player-button js-mute-button" hidden>
-            <i class="player-menu-icon fa fa-volume-up fa-lg" aria-hidden="true"></i>
-          </button>
+          <div class="play-pause">
+            <button class="player-button js-play-button">
+              <i class="player-menu-icon fa fa-play fa-lg" aria-hidden="true"></i>
+            </button>
+            <button class="player-button js-pause-button" hidden>
+              <i class="player-menu-icon fa fa-pause fa-lg" aria-hidden="true"></i>
+            </button>
+          </div>
+          <div class="mute-unmute">
+            <button class="player-button js-volume-button">
+              <i class="player-menu-icon fa fa-volume-off fa-lg" aria-hidden="true"></i>
+            </button>
+            <button class="player-button js-mute-button" hidden>
+              <i class="player-menu-icon fa fa-volume-up fa-lg" aria-hidden="true"></i>
+            </button>
+          </div>
         </div>
         <div class="controls viewing-panel">
           <div class="player-control-time" style="color: white;">
             <div class="js-current-time"></div>
-            <div class="viewing-progressbar">—</div>
-            <div class="empty-space"></div>
+            <div class="viewing-progressbar">
+              <div class="js-progress">
+                <div class="js-progress-slider"></div>
+                <div class="progress-pointer"></div>
+              </div>
+            </div>
             <div class="js-duration"></div>
           </div>
         </div>
+        
         <div class="controls right-buttons">
           <button class="player-button js-fullscreen-button">
             <i class="player-menu-icon fa fa-expand fa-lg" aria-hidden="true"></i>
