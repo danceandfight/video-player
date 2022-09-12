@@ -21,7 +21,8 @@
 .player-controls {
   display: flex;
   background-color: black;
-  height: 42px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   align-items: center;
 }
 
